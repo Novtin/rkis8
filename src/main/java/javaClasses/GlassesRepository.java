@@ -1,6 +1,6 @@
 package javaClasses;
 
-import javaClasses.entity.Glasses;
+import javaClasses.Glasses;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

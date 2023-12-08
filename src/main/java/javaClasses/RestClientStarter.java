@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+/**
+ * Класс для запуска тестирования запросов для REST контроллера
+ */
 @Component
 public class RestClientStarter implements CommandLineRunner {
 
@@ -24,10 +27,10 @@ public class RestClientStarter implements CommandLineRunner {
             restClient.testAddGlasses();
             restClient.testGetAllGlasses();
             restClient.testGetFilterAllGlasses(0);
-            restClient.testGetGlassesById(30);
-            restClient.testUpdateGlasses(30);
-            restClient.testDeleteGlasses(30);
-            restClient.testDeleteGlasses(31);
+            restClient.testGetGlassesById(1);
+            restClient.testUpdateGlasses(1);
+            restClient.testDeleteGlasses(1);
+            restClient.testDeleteGlasses(2);
         } catch (Exception exception){
             logger.error("Ошибка выполнения REST запросов: {}", exception.getMessage());
         }

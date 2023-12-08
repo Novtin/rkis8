@@ -3,8 +3,7 @@ package javaClasses;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
-import javaClasses.entity.Glasses;
-import javaClasses.GlassesRepository;
+import javaClasses.Glasses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +18,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Контроллер web приложения
+ */
 @Controller
 public class MainController {
     private final GlassesRepository glassesRepository;

@@ -5,11 +5,13 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
-import javaClasses.entity.Glasses;
+import javaClasses.Glasses;
 
 import java.util.Optional;
 
-
+/**
+ * Класс для тестирования запросов для REST контроллера
+ */
 @Component
 public class RestClient {
 

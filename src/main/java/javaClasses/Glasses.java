@@ -1,4 +1,4 @@
-package javaClasses.entity;
+package javaClasses;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
