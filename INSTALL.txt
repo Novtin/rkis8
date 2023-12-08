@@ -1,0 +1,21 @@
+Для развёртывания БД в консоли psql:
+Создайте новую базу данных и пользователя в консоли psql под своими данными:
+CREATE DATABASE rkis;
+CREATE USER postgres WITH PASSWORD 'postgres';
+\q
+psql -h localhost -p 5432 -d rkis -U postgres -W
+Введите пароль: postgres
+\c rkis;
+CREATE TABLE glasses (
+	id SERIAL PRIMARY KEY,
+	diopters DOUBLE PRECISION NOT NULL,
+    lengthArches DOUBLE PRECISION NOT NULL,
+   	lensColor TEXT NOT NULL,
+    frameColor TEXT NOT NULL,
+    brand TEXT NOT NULL
+);
+
+Для компиляции и запуска проекта нужно ввести в терминале, находясь в корневой папке:
+mvn clean package
+java -jar target/rkis5-1.0-SNAPSHOT.jar
+Открыть в бразуере localhost:8081
