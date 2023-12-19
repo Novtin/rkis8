@@ -8,10 +8,10 @@
     <relativePath/>
   </parent>
   <groupId>edu.sfu</groupId>
-  <artifactId>rkis7</artifactId>
+  <artifactId>rkis8</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>rkis7</name>
+  <name>rkis8</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,6 +19,7 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
+
 
   <dependencies>
     <dependency>
@@ -57,6 +58,10 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
       <version>3.1.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-activemq</artifactId>
     </dependency>
   </dependencies>
 

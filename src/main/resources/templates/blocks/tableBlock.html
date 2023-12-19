@@ -7,6 +7,7 @@
       <td>Цвет оправы</td>
       <td>Цвет линз</td>
       <td>Длина дужек</td>
+      <td>Купить</td>
     </tr>
     <tr th:each="glasses : ${glassesList}">
       <td th:text="${glasses.getId()}"></td>
@@ -15,6 +16,11 @@
       <td th:text="${glasses.getFrameColor()}"></td>
       <td th:text="${glasses.getLensColor()}"></td>
       <td th:text="${glasses.getLengthArches()}"></td>
+      <td>
+        <form th:action="'/buy/' + ${glasses.getId()}" method="post">
+          <button type="submit">Купить</button>
+        </form>
+      </td>
     </tr>
   </table>
 </div>

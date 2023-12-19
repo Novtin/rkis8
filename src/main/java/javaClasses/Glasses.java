@@ -49,6 +49,8 @@ public class Glasses {
      */
     @Column(name = "brand")
     private String brand;
+    @Column(name = "purchased", columnDefinition = "false")
+    private boolean purchased;
 
     /**
      * Конструктор с параметрами
@@ -166,5 +168,13 @@ public class Glasses {
      */
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public boolean isPurchased() {
+        return purchased;
+    }
+
+    public void setPurchased(boolean purchased) {
+        this.purchased = purchased;
     }
 }
